@@ -1,0 +1,194 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 21, 2019, 12:52:07 AM
+    Author     : THX PROGRAMMER
+*/
+#none{
+    display:none;
+}
+#blok {
+    display:block;
+}
+.none{
+    display:none;
+}
+.blok {
+    display:block;
+}
+.box-tutup-kasir{
+    width: 220px;
+    margin: 20px auto;
+}
+.input-red, select.input-red:focus{
+	border:solid 2px red !important;
+        background: none !important;
+        box-shadow: none !important;
+}
+div#load_screen{
+    background: #000;
+    opacity: 1;
+    position: fixed;
+    z-index:2000;
+    top: 0px;
+    width: 100%;
+    height: 1600px;
+}
+div#load_screen > div#loading{
+    color:#FFF;
+    width:120px;
+    height:24px;
+    margin: 300px auto;
+}
+@keyframes flickerAnimation {
+    0%   { opacity:0; }
+    20%   { opacity:1; }
+    40%   { opacity:1; }
+    60%  { opacity:1; }
+    80%  { opacity:1; }
+    100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation{
+    0%   { opacity:0; }
+    20%   { opacity:1; }
+    40%   { opacity:1; }
+    60%  { opacity:1; }
+    80%  { opacity:1; }
+    100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation{
+    0%   { opacity:0; }
+    20%   { opacity:1; }
+    40%   { opacity:1; }
+    60%  { opacity:1; }
+    80%  { opacity:1; }
+    100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation{
+    0%   { opacity:0; }
+    20%   { opacity:1; }
+    40%   { opacity:1; }
+    60%  { opacity:1; }
+    80%  { opacity:1; }
+    100% { opacity:0; }
+}
+.animate-flicker {
+    -webkit-animation: flickerAnimation 4s;
+    -moz-animation: flickerAnimation 4s;
+    -o-animation: flickerAnimation 4s;
+    animation: flickerAnimation 4s;
+}
+
+#boxpos{
+    z-index:810;position: absolute;bottom:0;left:0;width: auto;opacity:0;
+}
+/* Pop up Notif */
+.typeahead {
+	background-color: #FFFFFF;
+}
+.typeahead:focus {
+	border: 2px solid #0097CF;
+}
+.tt-query {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+	display:none;
+}
+.tt-dropdown-menu {
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+}
+.tt-suggestion {
+	font-size: 18px;
+	line-height: 24px;
+	padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;
+}
+.tt-suggestion p {
+	margin: 0;
+}
+/* Pop Up Onclick */
+
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #F2FDFF;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
